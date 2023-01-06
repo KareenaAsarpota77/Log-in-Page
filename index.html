@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Login / Sign Up Form</title>
+</head>
+
+<body>
+  <div class="box">
+    <form class="b" id="login">
+      <h1 class="title"> Sign in</h1>
+      <div class="input">
+        <input type="text" class="userinput" autofocus placeholder="Username or email address">
+      </div>
+      <div class="error">
+        Incorrect Username/Password
+      </div>
+      <p class="forgot">
+        <a href="#" class="forgot link">
+          Forgot password?
+        </a>
+      </p>
+      <div class="input">
+        <input type="text" class="userinput" autofocus placeholder="Password">
+      </div>
+      <button class="continue" type="submit">
+        Sign-in
+      </button>
+      <p class="forgot">
+        <a href="./" class="forgot link" id="linkCreateAccount">
+          No account? Create one!
+        </a>
+      </p>
+
+    </form>
+  </div>
+</body>
+
+<style>
+  body {
+    height: 700px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 20px;
+    background-color: rgb(67, 87, 98);
+    background-size: cover;
+    justify-content: center;
+  }
+
+  .box {
+    width: 400px;
+    max-width: 400px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+
+  .continue {
+    font-weight: bold;
+    color: white;
+    padding-left: 175px;
+    padding-top: 4px;
+    padding-right: 175px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(35, 134, 54);
+    box-sizing: border-box;
+  }
+
+  .forgot {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+  .userinput {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid (221,221,221);
+    outline: none;
+    background:  (238,238,238);
+    margin-bottom: 5px;
+}
+
+</style>
